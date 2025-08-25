@@ -1,6 +1,6 @@
 const BentoCard = ({ title, description, image, video, className = "" }) => {
   return (
-    <div className={`relative h-full w-full rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 ${className}`}>
+    <div className={`relative h-full w-full rounded-xl overflow-hidden shadow-lg  ${className}`}>
       
       {image && (
         <img
