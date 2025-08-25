@@ -25,6 +25,8 @@ const About = () => {
     height: '100vh',
     borderRadius: '0% 0% 0% 0%'
   },0);
+
+  
    gsap.from(split.chars, {
     opacity: 0,
     stagger:0.1,
@@ -33,6 +35,14 @@ const About = () => {
     scrollTrigger: {
       trigger: '.anim1',
       start: 'top 80%',
+      toggleActions: 'restart none none reverse'
+    }
+  });
+   gsap.to('.about-subtext', {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.about-subtext',
+      start: 'center center',
       toggleActions: 'restart none none reverse'
     }
   });
