@@ -6,6 +6,7 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/all'
 import { SplitText } from 'gsap/all'
 import NavBar from './components/NavBar'
+import Features from './components/Features'
 gsap.registerPlugin(ScrollTrigger,SplitText)
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NavBar/>
       <Hero/>
       <About/>
+      <Features/>
       <div className="h-dvh bg-black"></div>
       </main>
     </>
