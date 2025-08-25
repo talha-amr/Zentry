@@ -56,6 +56,7 @@ body {
   overflow-x: hidden;
   background-color: #dfdff0;
   font-family: "General Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 @layer utilities {
   .absolute-center {
@@ -172,4 +173,12 @@ body {
     opacity: 0.8;
   }
 }
-
+/* .mask-clip-path {
+   clip-path: polygon(14% 0, 84% 4%, 98% 89%, 0 100%);
+} */
+  .about-subtext {
+    @apply absolute bottom-[-80dvh] left-1/2 w-full max-w-120 -translate-x-1/2 text-center font-circular text-lg md:max-w-[40rem];
+  }
+    .about-image {
+    @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+  }

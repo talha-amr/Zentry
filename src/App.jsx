@@ -1,5 +1,6 @@
 
 import './App.css'
+import About from './components/About'
 import Hero from './components/Hero'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
@@ -9,7 +10,8 @@ function App() {
     <>
       <main className='relative min-h-screen w-screen'>
       <Hero/>
-      <div className="h-dvh bg-blue-300 w-screen"></div>
+      <About/>
+      <div className="h-dvh bg-black"></div>
       </main>
     </>
   )
