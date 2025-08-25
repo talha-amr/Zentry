@@ -4,11 +4,13 @@ import About from './components/About'
 import Hero from './components/Hero'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import NavBar from './components/NavBar'
 gsap.registerPlugin(ScrollTrigger)
 function App() {
   return (
     <>
       <main className='relative min-h-screen w-screen'>
+      <NavBar/>
       <Hero/>
       <About/>
       <div className="h-dvh bg-black"></div>

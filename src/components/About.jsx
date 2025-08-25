@@ -2,6 +2,7 @@ import React from 'react'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import AnimatedTitle from './AnimatedTitle';
 const About = () => {
   useGSAP(() => {
   const clipAnimation = gsap.timeline({
@@ -28,14 +29,12 @@ const About = () => {
           Welcome to <span className="font-bold">Zentry</span>
         </h2>
 
-        <div className="mt-5 text-center text-4xl uppercase leading-[0.8] md:text-5xl">
-          Disc<b>o</b>ver the world's <br />
-          l<b>a</b>rgest shared adventure
-        </div>
+        <AnimatedTitle title="Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
+        containerClass="mt-5 !text-black text-center special-font"/>
      
 
-      <div className=" mt-[20rem] about-subtext ">
-        <p className='font-bold'>The Game of Games begins — your life, now an epic MMORPG.</p>
+      <div className="  about-subtext ">
+        <p className='text-sm'>The Game of Games begins — your life, now an epic MMORPG.</p>
         <p className='text-gray-500'>
           <span>Zentry</span> unites every player from countless games and platforms.
         </p>
