@@ -3,8 +3,12 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import AnimatedTitle from './AnimatedTitle';
+import { SplitText } from 'gsap/all';
 const About = () => {
   useGSAP(() => {
+   let split = new SplitText(".anim1", {
+    type: "chars"
+  });
   const clipAnimation = gsap.timeline({
     scrollTrigger: {
       trigger: '#clip',
@@ -20,12 +24,23 @@ const About = () => {
     width: '100vw',
     height: '100vh',
     borderRadius: '0% 0% 0% 0%'
+  },0);
+   gsap.from(split.chars, {
+    opacity: 0,
+    stagger:0.1,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: '.anim1',
+      start: 'top 80%',
+      toggleActions: 'restart none none reverse'
+    }
   });
 },[]);
   return (
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-20 mt-36 flex flex-col items-center gap-5">
-        <h2 className="font-general text-sm uppercase md:text-base">
+        <h2 className="font-general text-sm uppercase md:text-xs anim1">
           Welcome to <span className="font-bold">Zentry</span>
         </h2>
 

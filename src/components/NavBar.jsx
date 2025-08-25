@@ -23,6 +23,7 @@ const NavBar = () => {
     setIsIndicatorActive((prev) => !prev);
   };
 
+  // 🔊 Handle audio play/pause
   useEffect(() => {
     if (isAudioPlaying) {
       audioElementRef.current.play();
@@ -31,26 +32,30 @@ const NavBar = () => {
     }
   }, [isAudioPlaying]);
 
+  // 👇 Scroll detection
   useEffect(() => {
     if (currentScrollY === 0) {
       setIsNavVisible(true);
       navContainerRef.current.classList.remove("floating-nav");
     } else if (currentScrollY > lastScrollY) {
+      // scrolling down → hide nav
       setIsNavVisible(false);
       navContainerRef.current.classList.add("floating-nav");
     } else if (currentScrollY < lastScrollY) {
+      // scrolling up → show nav
       setIsNavVisible(true);
       navContainerRef.current.classList.add("floating-nav");
     }
-
     setLastScrollY(currentScrollY);
   }, [currentScrollY, lastScrollY]);
 
+  // 🎬 GSAP animation for nav
   useEffect(() => {
     gsap.to(navContainerRef.current, {
       y: isNavVisible ? 0 : -100,
       opacity: isNavVisible ? 1 : 0,
-      duration: 0.2,
+      ease: "power2.out",
+      duration: 0.4,
     });
   }, [isNavVisible]);
 
@@ -61,7 +66,7 @@ const NavBar = () => {
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
-          {/* Logo and Product button */}
+          {/* Logo + Button */}
           <div className="flex items-center gap-7">
             <img src="/img/logo.png" alt="logo" className="w-10" />
 
@@ -73,7 +78,7 @@ const NavBar = () => {
             />
           </div>
 
-          {/* Navigation Links and Audio Button */}
+          {/* Links + Audio */}
           <div className="flex h-full items-center">
             <div className="hidden md:block">
               {navItems.map((item, index) => (

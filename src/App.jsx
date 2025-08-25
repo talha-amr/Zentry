@@ -3,9 +3,10 @@ import './App.css'
 import About from './components/About'
 import Hero from './components/Hero'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import ScrollTrigger from 'gsap/dist/all'
+import { SplitText } from 'gsap/all'
 import NavBar from './components/NavBar'
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger,SplitText)
 function App() {
   return (
     <>
