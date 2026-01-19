@@ -50,7 +50,7 @@ const About = () => {
   return (
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-10 md:mb-20 mt-10 md:mt-36 flex flex-col items-center gap-5">
-        <h2 className="font-general text-[0.9rem] uppercase md:text-[0.6vw] anim1">
+        <h2 className="font-general text-[0.9rem] uppercase md:text-[0.9vw] anim1">
           Welcome to <span className="font-bold">Zentry</span>
         </h2>
 
