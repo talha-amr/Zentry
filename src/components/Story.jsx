@@ -43,17 +43,17 @@ const Story = () => {
 
   return (
     <section id="story" className='min-h-dvh w-screen bg-black text-blue-50'>
-      <div className="flex size-full flex-col items-center pt-[10vw] pb-24">
+      <div className="flex size-full flex-col items-center pt-30  md:pt-[10vw]">
         <p className='font-general text-sm uppercase md:text-[10px]'>the multiverse of ip world</p>
 
         <div className="relative size-full">
           <AnimatedTitle
             title={"The St<b>o</b>ry of <br /> a Hidden Real<b>m</b>"}
             sectionId="#story"
-            containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10 text-center flex flex-col items-center w-full"
+            containerClass="mt-5 pointer-events-none !md:text-4xl !text-[3.7rem] mix-blend-difference relative z-10 text-center flex flex-col items-center w-full"
           />
 
-          <div className="story-img-container relative md:-mt-10 w-full md:h-[75vh] md:w-[80vw] mx-auto">
+          <div className="story-img-container relative md:-mt-10 h-[40vh] w-full md:h-[75vh] md:w-[80vw] mx-auto">
             <div className="story-img-mask story-clip relative size-full rounded-3xl"
               ref={frameRef}
               onMouseLeave={handleMouseLeave}
@@ -82,7 +82,7 @@ const Story = () => {
           </svg>
         </div>
         <div>
-          
+
         </div>
       </div>
     </section>

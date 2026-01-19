@@ -185,11 +185,12 @@ body {
 }
 
 .contact-clip-path-1 {
-clip-path: polygon(16% 5%, 80% 0, 78% 88%, 27% 95%);
+  clip-path: polygon(16% 5%, 80% 0, 78% 88%, 27% 95%);
 }
 
 .contact-clip-path-2 {
-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);}
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
 
 .sword-man-clip-path {
   clip-path: polygon(16% 0, 89% 15%, 75% 100%, 0 97%);
@@ -199,11 +200,11 @@ clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);}
    clip-path: polygon(14% 0, 84% 4%, 98% 89%, 0 100%);
 } */
 .about-subtext {
-  @apply absolute bottom-[-90dvh] left-1/2 w-full max-w-120 -translate-x-1/2 text-center font-circular text-lg md:max-w-[40rem];
+  @apply absolute bottom-[-75dvh] md:bottom-[-90dvh] left-1/2 w-full max-w-120 -translate-x-1/2 text-center font-circular text-lg md:max-w-[40rem];
 }
 
 .about-image {
-  @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+  @apply absolute left-1/2 top-0 z-20 h-[60vh] w-30 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
 }
 
 .animated-title {

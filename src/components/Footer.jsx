@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className="w-screen bg-[#5542ff] py-[6vh] text-black">
             <div className="container mx-auto flex flex-col items-center justify-between  px-[1vw] md:flex-row">
-                <p className="text-center font-medium text-[1vw] md:text-left">
+                <p className="text-center font-medium text-xs md:text-[1vw] md:text-left">
                     &copy;Nova 2024. All rights reserved
                 </p>
 

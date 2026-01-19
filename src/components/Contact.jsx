@@ -25,7 +25,7 @@ const Contact = () => {
                     />
                 </div>
 
-                <div className="absolute -top-[13%] left-[10%] w-60 sm:top-1/2 md:left-auto md:right-[7%] lg:top-[20%] lg:w-[18vw]">
+                <div className="absolute -top-[13%] left-1/2 w-48 -translate-x-1/2 md:left-auto md:right-[7%] md:top-20 md:w-[20vw] md:translate-x-0 lg:top-[20%] lg:w-[18vw]">
                     <ImageClipBox
                         src="/img/swordman.webp"
                         clipClass=" sword-man-clip-path md:scale-125"
@@ -33,11 +33,11 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col items-center text-center">
-                    <p className="mb-10 font-general text-[10px] uppercase">
+                    <p className="mb-10 font-general text-[15px] md:text-[0.9vw] uppercase">
                         Join Zentry
                     </p>
 
-                    <p className="special-font md:text-[5vw] w-full font-zentry font-black leading-[.9]">
+                    <p className="special-font  w-full font-zentry text-[4rem] font-black leading-[.9] md:text-[6vw]">
                         let's b<b>u</b>ild the <br /> new era of <br /> g<b>a</b>ming t<b>o</b>gether.
                     </p>
 
