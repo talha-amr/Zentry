@@ -11,9 +11,8 @@ const AnimatedTitle = ({ title, containerClass }) => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       const split = new SplitText(containerRef.current, {
-        type: "lines",
-        linesClass: "animated-line",
-        reduceWhiteSpace: false,
+        type: "words lines",
+  linesClass: "animated-line" 
       });
 
       gsap.fromTo(
@@ -44,7 +43,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
   return (
     <h2
       ref={containerRef}
-      className={`animated-title ${containerClass || ""} text-4xl font-bold`}
+      className={`animated-title ${containerClass || ""} text-4xl font-bold `}
       dangerouslySetInnerHTML={{ __html: title }}
     />
   );

@@ -54,8 +54,8 @@ const About = () => {
           Welcome to <span className="font-bold">Zentry</span>
         </h2>
 
-        <AnimatedTitle title="Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
-        containerClass="mt-5 !text-black text-center special-font"/>
+        <AnimatedTitle title="Disc<b>o</b>ver the world's <br /> largest shared<br/><b>a</b>dventure"
+        containerClass="mt-5 !text-black text-center special-font max-w-[87%]"/>
      
 
       <div className="  about-subtext ">
