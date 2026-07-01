@@ -107,7 +107,7 @@ const Features = () => {
 
   return (
     <section ref={sectionRef} className="min-h-dvh w-screen bg-black overflow-hidden">
-      <div className="container mx-auto w-full pt-20 md:pt-40 px-4 md:px-35">
+      <div className="container mx-auto w-full pt-20 md:pt-40 pb-24 md:pb-40 px-4 md:px-35">
         <div className="max-w-90 mb-12 md:mb-20 section-title">
           <p className="font-circular text-blue-50 text-base md:text-lg">Explore the Zentry Universe</p>
           <p className="font-circular text-blue-50 opacity-50 mt-2 text-sm md:text-base">

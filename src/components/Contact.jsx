@@ -37,7 +37,7 @@ const Contact = () => {
                         Join Zentry
                     </p>
 
-                    <p className="special-font  w-full font-zentry text-[4rem] font-black leading-[.9] md:text-[6vw]">
+                    <p className="special-font  w-full font-zentry text-[3rem] font-black leading-[.9] md:text-[6vw]">
                         let's b<b>u</b>ild the <br /> new era of <br /> g<b>a</b>ming t<b>o</b>gether.
                     </p>
 
